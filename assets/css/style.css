@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    outline: none;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --color-bg: #D9CDF7;
+    --color-letras: #271A45;
+    --color-white: #fff;
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+/* Container */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    gap: 1rem;
+}
+
+/* Imagem do sofá */
+#container #container-img #girar {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#container #container-img #girar:hover {
+    color: var(--color-white);
+}
+
+.girar360 {
+    transform: rotate(50deg);
+}
+
+#container #container-img img {
+    width: 450px;
+}
+
+/* Info */
+#container #info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#container #info #container-info {
+    display: flex;
+    flex-direction: column;
+    gap:  .6rem;
+}
+
+#container #info #container-info p {
+    font-size: 15px;
+    color: var(--color-letras);
+}
+
+#container #info #container-info h1 {
+    font-family: 'Crimson Pro';
+}
+
+/* Botão */
+#container #info button {
+    border: none;
+    border: solid 1px var(--color-letras);
+    border-radius: 10px;
+    background: none;
+    padding: .5rem 1rem;
+    color: var(--color-letras);
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+#container #info button:hover {
+    transform: scale(1.1);
+    border: solid 1px var(--color-white);
+}
